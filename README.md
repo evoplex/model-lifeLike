@@ -6,17 +6,17 @@ This is a model plugin for [Evoplex](https://evoplex.org).
 
 It lets you define any [life-like cellular automaton](https://en.wikipedia.org/wiki/Life-like_cellular_automaton).
 
-## Rules Notation
+## Rules notation
 
-The model accepts two parameters: ``birth`` and ``survival``. They indicate the number of neighbours needed for a dead cell to become alive and an active one to survive respectively.
+The model accepts two parameters: `birth` and `survival`. They indicate the number of neighbours needed for a dead cell to become alive and an active one to survive respectively.
 
-For example, let's take the most popular example: Conway's Game of Life which is defined by the rule ``B3/S23`` so this translates to ``birth:3`` and ``survival:23``.
+For example, let's take the most popular example: Conway's Game of Life which is defined by the rule `B3/S23` so this translates to `birth=3` and `survival=23`.
 
-This means that every dead cell can become active in the next generation if and only if it has exactly 3 live neigbors.
+This means that every dead cell can become active in the next generation if and only if it has exactly 3 live neighbors.
 
 Likewise, an active cell will survive if it has either 2 or 3 live neighbors and will die otherwise.
 
-If you want to set a specific value to empty, simply set the respective parameter to ``-1``. For example, the correct configuration for ``B123/S`` is ``birth:123``, ``survival:-1``.
+The empty rule is defined by `-1`. For example, the correct configuration for `B123/S` is `birth=123`,  `survival=-1`.
 
 ## Examples
 

@@ -4,7 +4,7 @@
   "title": "Life-like automata",
   "version": 1,
   "author": "Eleftheria Chatziargyriou",
-  "description": "This implements life-like cellular automata.",
+  "description": "This implements life-like cellular automata. Note that an empty input is defined by -1, e.g., B2/S is defined by birth=2 and survival=-1.",
   "supportedGraphs": ["squareGrid"],
   "pluginAttributesScope": [
     {"birth": "int[-1,max]"},
